@@ -35,6 +35,14 @@
     "dataSource": "db",
     "public": false
   },
+  "CareGiver": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "Patient": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
   "Person": {
     "dataSource": "mlab-mongo",
     "public": true
@@ -44,10 +52,6 @@
     "public": true
   },
   "MedicationRule": {
-    "dataSource": "mlab-mongo",
-    "public": true
-  },
-  "Patient": {
     "dataSource": "mlab-mongo",
     "public": true
   },
@@ -64,10 +68,6 @@
     "public": true
   },
   "MedicationInteraction": {
-    "dataSource": "mlab-mongo",
-    "public": true
-  },
-  "CareGiver": {
     "dataSource": "mlab-mongo",
     "public": true
   },

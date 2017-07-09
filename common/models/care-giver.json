@@ -7,27 +7,16 @@
   },
   "properties": {
     "email": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "mobilePhone": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "patients": {
-      "type": "hasOne",
-      "model": "Patient",
-      "foreignKey": ""
-    }
-  },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW"
-    }
-  ],
+  "relations": {},
+  "acls": [],
   "methods": {}
 }

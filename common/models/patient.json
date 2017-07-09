@@ -7,7 +7,8 @@
   },
   "properties": {
     "favoriteColor": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
@@ -23,13 +24,6 @@
       "foreignKey": ""
     }
   },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }

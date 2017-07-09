@@ -22,6 +22,11 @@
       "type": "hasOne",
       "model": "Medication",
       "foreignKey": ""
+    },
+    "medicationLogEntries": {
+      "type": "hasMany",
+      "model": "MedicationLogEntry",
+      "foreignKey": ""
     }
   },
   "acls": [
