@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mlab-mongo": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://angelhack:angelhack17@ds153352.mlab.com:53352/angelhack-healthcompanion",
+    "database": "",
+    "password": "",
+    "name": "mlab-mongo",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

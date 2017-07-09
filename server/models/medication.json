@@ -1,0 +1,44 @@
+{
+  "name": "Medication",
+  "plural": "Medication",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "manufacturer": {
+      "type": "string",
+      "required": true,
+      "default": "Generic"
+    },
+    "purpose": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "shape": {
+      "type": "string",
+      "required": true
+    },
+    "size": {
+      "type": "string",
+      "required": true,
+      "default": "Small"
+    },
+    "sideEffects": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
