@@ -42,5 +42,37 @@
   "Medication": {
     "dataSource": "mlab-mongo",
     "public": true
+  },
+  "MedicationRule": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "Patient": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "Ailment": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "Symptom": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "SideEffect": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "MedicationInteraction": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "CareGiver": {
+    "dataSource": "mlab-mongo",
+    "public": true
+  },
+  "MedicationLogEntry": {
+    "dataSource": "mlab-mongo",
+    "public": true
   }
 }

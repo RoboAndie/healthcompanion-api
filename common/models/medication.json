@@ -7,13 +7,15 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "genericName": {
       "type": "string",
       "required": true
     },
+    "brandName": {
+      "type": "string"
+    },
     "manufacturer": {
       "type": "string",
-      "required": true,
       "default": "Generic"
     },
     "purpose": {
@@ -32,13 +34,24 @@
       "type": "string",
       "required": true,
       "default": "Small"
-    },
-    "sideEffects": {
-      "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
+  "relations": {
+    "medications": {
+      "type": "hasMany",
+      "model": "Medication",
+      "foreignKey": "",
+      "through": "MedicationInteraction"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

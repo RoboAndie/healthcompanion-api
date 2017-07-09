@@ -1,0 +1,36 @@
+{
+  "name": "MedicationRule",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nickname": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    },
+    "countRemaining": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "medications": {
+      "type": "hasOne",
+      "model": "Medication",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "CareGiver",
+  "base": "Person",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "email": {
+      "type": "string"
+    },
+    "mobilePhone": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "patients": {
+      "type": "hasOne",
+      "model": "Patient",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

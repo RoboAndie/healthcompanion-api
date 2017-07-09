@@ -1,0 +1,35 @@
+{
+  "name": "Patient",
+  "base": "Person",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "favoriteColor": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ailments": {
+      "type": "hasMany",
+      "model": "Ailment",
+      "foreignKey": ""
+    },
+    "medicationRules": {
+      "type": "hasMany",
+      "model": "MedicationRule",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

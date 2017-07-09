@@ -1,27 +1,25 @@
 {
-  "name": "Person",
-  "plural": "People",
+  "name": "Symptom",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "firstName": {
+    "Description": {
       "type": "string",
       "required": true
-    },
-    "lastName": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string",
-      "required": true,
-      "default": "patient"
     }
   },
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
